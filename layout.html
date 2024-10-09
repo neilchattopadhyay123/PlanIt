@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+
+    <!-- CSS -->
+    <style>
+
+        
+        /* body is the website itself */
+        body {
+
+            /* change bg color */
+            background-color: rgb(38, 38, 38);
+            font-family: "Times New Roman", Times, serif;
+        }
+        .wrapper {
+
+            /* aligns items and text on the center of the page (or whatever it is wrapped in) */
+            text-align: center;
+            align-items: center;
+
+            background-color: rgb(53, 53, 53);
+            padding: 10px;
+        }
+
+        .heading {
+            font-size: 60px;
+            font-weight: bold;
+        }
+
+        /* Great way to not retype the same code */
+        /* heading, subheading, and submitBtn will both have text color as white will still */
+        /* having their seperate properties */
+        .heading,
+        .subheading,
+        .submitBtn {
+            color: white;
+        }
+
+        .subheading {
+            font-size: 25px;
+            background-color: black;
+
+            padding: 50px;
+            margin: 50px;
+        }
+
+        .subheading,
+        .wrapper,
+        .submitBtn {
+            /* rounds out edges */
+            border-radius: 12px;
+        }
+
+        .submitBtn {
+            /* bg color is for the bg */
+            background-color: darkred;
+
+            /* You can add different padding for each side (applies to margin also) */
+            /* top right bottom left */
+            padding: 20px 50px 20px 50px;
+
+            border-width: 4px;
+            border-color: black;
+            border-style: solid;
+
+            /* Smooth transitions for when you hover over button */
+            /* Without this, the transition below will still happen, just instantly */
+            transition: background-color 0.5s ease, border-color 0.5s ease;
+        }
+
+        /* Adds a special effect for the button */
+        /* Hover is for the mouse, focus is for mobile (when you tap on it) */
+        .submitBtn:hover,
+        .submitBtn:focus {
+            background-color: darkblue;
+            border-color: white;
+        }
+    </style>
+
+    <!-- JavaScript -->
+    <script>
+
+        //When the btn is pressed, this function is called
+        function alertFunction() {
+            alert("TEST");
+        }
+
+    </script>
+</head>
+
+<!-- HTML -->
+<body>
+    
+    <!-- Wrapper -->
+     <!-- It is always smart to wrap your html is some container to organize all items -->
+    <div class="wrapper">
+
+        <!-- Titles -->
+         <!-- div is short for division, or essentially a section. It is a simple way to create rectangles and/or text -->
+          <!-- the class name you give it is what you use in CSS to give it style -->
+        <div class="heading">Crazy Big Heading</div>
+        <div class="subheading">Smaller not so crazy heading</div>
+
+        <!-- Submit Button -->
+         <!-- for button, the function you have for onclick is what will happen upon being pressed -->
+        <button class="submitBtn" onclick="alertFunction()">Alert</button>
+    </div>
+</body>
+</html>
