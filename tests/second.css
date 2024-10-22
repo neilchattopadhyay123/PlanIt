@@ -1,0 +1,57 @@
+.box,
+.box2 {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    background-color: cornflowerblue;
+    margin: 0 auto;
+
+    color: antiquewhite;
+    font-weight: bold;
+
+}
+
+.box:hover {
+    animation: jump 1s infinite;
+}
+
+.box2:hover {
+    animation: twirl 1s 3;
+}
+
+
+@keyframes jump {
+    0%, 100% { transform: translateY(0);}
+    50%{ transform: translateY(-20px);}
+}
+
+@keyframes twirl {
+    0% { transform: rotate(0deg);}
+    50% { transform: rotate(180deg);}
+    100% { transform: rotate(360deg);}
+}
+
+#itemList {
+    margin: 0 auto;
+    width: 100%;
+
+}
+
+#itemList .list-group-item {
+    background-color: darkgoldenrod;
+    margin: 0 10px;
+    border-radius: 10px;
+    padding: 20px;
+    color: white;
+}
+
+#itemList .list-group-item:nth-child(even) {
+    background-color: chocolate;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}

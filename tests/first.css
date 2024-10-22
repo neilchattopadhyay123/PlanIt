@@ -1,0 +1,80 @@
+.container {
+    position: sticky;
+    top: 0;
+}
+
+.navbar-brand{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link{
+    font-size: 20px;
+    color: white;
+
+    transition: color 0.3 ease;
+}
+
+.navbar-nav .nav-link:hover{
+    color: orange;
+}
+
+
+.grid-item:hover
+{
+    transform: translateY(-10px);
+}
+
+.grid-item-1{
+    background-color: aqua;
+}
+
+.grid-item-2{
+    background-color: crimson;
+}
+
+.grid-item-3{
+    background-color: coral;
+}
+
+h2,
+.grid-item{
+    font-size:40px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 30px;
+
+    transition: border-bottom 0.5 ease;
+}
+
+h2:hover{
+    border-bottom: 5px;
+    border-width: 5px;
+}
+
+
+.grid-item{
+    font-size: 20px;
+
+    margin-bottom: 20px;
+
+    transition: transform 0.3s ease;
+}
+
+.btn:hover
+{
+    background-color: darkolivegreen;
+}
+
+.check-wrapper{
+    background-color: aqua;
+    color: cadetblue;
+    padding: 20px, 0px, 0px, 0px;
+    margin: 10px;
+    border-radius: 8px;
+    border-color: black;
+    border-style: solid;
+}
+
+
+
