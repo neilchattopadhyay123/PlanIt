@@ -10,14 +10,27 @@
   <body>
 
     
-    <!-- Nav bar with logo that links to index-->
-    <nav class="navbar navbar-light bg-light">
-      <a class="navbar-brand" href="index.html">
-        <img src="img/PlanetLogo-removebg-preview.png" width="30" height="30" class="d-inline-block align-top" alt="">
-        PlanIt
-      </a>
+    <!-- Nav bar with logo that links to index-->    
+    <nav class="navbar navbar-expand-sm navbar-light bg-light"> <!-- Change color -->
+      <div class="container-fluid">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="navbar-link" href="index.html">
+              <img src="img/PlanetLogo-removebg-preview.png" width="40" height="40" class="d-inline-block align-top" alt="">
+              PlanIt
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="chatbot.html">Plan Schedule</a>
+        </ul>
+      </div>
     </nav>
-    
+
+
+
     <!-- Input bar with button on end to submit input -->
     <div class="input-group mb-3">
       <input type="text" class="form-control" placeholder="Tell me your Schedule..." aria-label="user input schedule" aria-describedby="basic-addon2">
@@ -25,8 +38,6 @@
         <button class="btn btn-outline-secondary" type="button">Button</button>
       </div>
     </div>      
-
-
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
